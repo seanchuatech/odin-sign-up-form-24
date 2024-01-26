@@ -1,0 +1,167 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END OF CSS RESET */
+
+body {
+    display: flex;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+input {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    height: 25px;
+}
+
+input:focus {
+    background-color: #f1f2f3;
+}
+
+.left-section {
+    background-image: url("./images/leaves.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100vh;
+    width: 30vw;
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+}
+
+.logo {
+    background: rgba(0, 0, 0, 0.4);
+    height: 250px;
+    margin-top: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* font-family: norse-bold; */
+}
+
+.logo img {
+    max-height: 80%;
+}
+
+.logo h1 {
+    font-size: 5rem;
+    color: white;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Center the element by translating it back by 50% of its own width */
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.right-section {
+    width: 100%;
+}
+.right-top-section {
+    background-color: #e6e6e6;
+    height: 33vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.right-top-section div {
+    padding-left: 2vw;
+}
+
+.right-top-section div h2:last-of-type {
+    margin-top: 12px;
+}
+
+form {
+    height: calc(100% - 33vh);
+
+    background-color: #e6e6e6;
+}
+
+fieldset {
+
+    background-color: #FFFFFF;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 4vh 2vw;
+}
+
+.row {
+    display: flex;
+    gap: 15%; 
+    margin-top: 20px;
+}
+
+.row div {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.right-low-section {
+    flex-flow: column wrap;
+    padding: 4vh 2vw;
+}
+
+.right-low-section div p {
+    margin-top: 12px;
+}
